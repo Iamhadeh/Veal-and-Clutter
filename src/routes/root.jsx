@@ -1,11 +1,23 @@
 
 
 
-import React from "react"
+import React from "react" 
+import Slider from "react-slick"; 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-
+ 
 
 function Root() {
+
+
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1
+      };
 
     return (
     <>
@@ -43,21 +55,30 @@ function Root() {
     {/* second section start here --- about Veal and cutter */}
 
     <div className="about-con">
-        <h2 className="website-name">VEAL & CUTTER</h2>
-        <div>
-            <p>From inception of Veal & Clutter, our journey has been marked by relenteless pursuit of excellence in shoemaking. Founded with a passion for craftmanship, we have grown into a dedicated team or artisans and designers
+        <div className="about-us-inner-container">
+            <div className="about-us-col-1">
+                <img className="about-us-img" src="https://i.pinimg.com/736x/c4/3a/fa/c43afa7273b9e497de55ba79781a07ca.jpg" alt="" />
+            </div>
+
+           <div className="about-us-col-2">
+              <h2 className="website-name">VEAL & CUTTER</h2>
+               <p>From inception of Veal & Clutter, our journey has been marked by relenteless pursuit of excellence in shoemaking. Founded with a passion for craftmanship, we have grown into a dedicated team or artisans and designers
                 committed to creating the finest footwears. Each pair of shoes we produce is a testamount of dedication
                 combining premium materials with exceptional craftmanship. Our Story is just not about making shoes, it is about the people who wear them. From the pioneers who inspired our designs to the forward-thinkers of today. 
-                Veal & Clutter shoes are crafted for those who shaped the world with every step they take.</p>
+                Veal & Clutter shoes are crafted for those who shaped the world with every step they take.
+               </p>
+               <button className="about-VC">About Veal & Cutter</button>
+           </div>
         </div>
-        <button className="about-VC">About Veal & Cutter</button>
+  
     </div>
 
 
     {/* this is the third section */}
     <div className="ourservices-con">
         <h2>Our Services</h2>
-        <div className="our-service-slide-container">
+        <div className="slider-container">
+        <Slider {...settings}>
            <div className="our-service-img-slide-1"> 
              <img className="our-services-img" src="https://i.pinimg.com/736x/1a/50/84/1a50841cc605168d20d499236ba912c4.jpg" alt="" />
              <p className="our-service-text-line" >Design: Transform ideas into stunning designs</p>
@@ -74,6 +95,7 @@ function Root() {
              <img className="our-services-img" src="https://i.pinimg.com/736x/9a/a2/3d/9aa23ddc0ea1a86c7496a3988a405e39.jpg" alt="" />
              <p className="our-service-text-line">Design: Transform ideas into stunning designs</p>
             </div>
+            </Slider>
         </div>
     </div>
 

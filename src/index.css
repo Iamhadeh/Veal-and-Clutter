@@ -86,9 +86,6 @@ button {
   background-color: transparent;
   margin-left: 140px;
   padding: 20px;
-  /* display: flex;
-  flex-direction: column;
-  gap: 20px; */
 }
 
 h1 {
@@ -123,13 +120,45 @@ h1 {
 
 .about-con {
   width: 1440px;
-  margin: 20px;
+  height: 640px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
+
+.about-us-inner-container {
+  display: flex;
+  width: 1340px;
+  height: 600px;
+  margin: 0px ;
+  padding: 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-us-col-1, .about-us-col-2 {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 720px;
+}
+
+
+.about-us-col-2 {
+  align-items:center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.about-us-img {
+  height: 500px;
+  width: 600px;
+}
+
 
 
 .website-name {
@@ -138,7 +167,7 @@ h1 {
 }
 
 .about-con p {
-  width: 900px;
+  width: fit-content;
 }
 
 .about-VC {
@@ -152,28 +181,32 @@ h1 {
 
 
 
+/* our services */
+
 .ourservices-con {
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   width: 1440px;
-  height: 600px;
+  height: 720px;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 
-.our-service-slide-container {
-  width: 1000px;
-  display: flex;
+.slider-container {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 1340px;
   height: fit-content;
   padding: 20px;
+  background-color: black;
+  margin: 20px 0px;
+  gap: 40px;
 }
 
 
 .our-services-img {
-  height: 400px;
-  width: 300px;
+  height: 560px;
+  width: 420px;
 }
 
 
@@ -185,65 +218,6 @@ h1 {
   font-weight: bolder;
 }
 
-
-.how-it-works-con {
-  width: 1440px;
-  height: 600px;
-  background-color: #f0f0f0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid black;
-}
-
-.second-how-it-works-con {
-  background-color: #cac6c6;
-  width: 1000px;
-  height: 480px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.third-how-it-works-con {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  margin-top: 40px;
-  width: fit-content;
-  height: fit-content;
-  padding: 20px;
-}
-
-.steps-for-ideas {
-  background-color: #f0f0f0;
-  height: 200px;
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 15px;
-  padding: 20px;
-  gap: 10px;
-}
-
-.steps-for-ideas  p {
-  font-size: 11.5px;
-}
-
-.steps-for-ideas h3 {
-  font-size: 14px;
-}
-
-.icon-idea-con {
-  height: 50px;
-  width: 50px;
-  background-color: orange;
-  border-radius: 50%;
-} 
 
 
 
@@ -399,8 +373,6 @@ h1 {
   display: flex;
   flex-direction: column;
    justify-content: center; 
-  /* align-items: center; */
-
 }
 
 .testimonial-inner-con {
@@ -436,16 +408,11 @@ h1 {
 }
 
 .testimonial-box-1 p {
-  /* width: 1440px;
-  height: 1200px;
-  grid-column: 1/2;
-  grid-row: 1/2; */
+
   color: #f3f4f2;
-  /* position: relative; */
   font-size: 50px;
   line-height: 40px;
   font-weight: bolder;
-  /* background-color: rgb(0 0 0/0.3); */
   padding-top: 450px;
   padding-left: 100px;
 }
@@ -456,6 +423,7 @@ h1 {
   font-style: italic;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: normal;
+  width: fit-content;
 }
 
 .heading-3 {
@@ -466,6 +434,7 @@ h1 {
   left: 100px;
   margin-bottom: 50px;
   z-index: 1;
+  width: fit-content;
 }
 
  .arrow-back-and-front-line {
@@ -477,7 +446,6 @@ h1 {
   margin: 0;
   padding: 0;
   gap: 20px;
-  /* color: orange; */
   font-size: 50px;
   margin-left: 200px;
 } 
@@ -498,7 +466,7 @@ h1 {
 /* cta area */
 
 .CTA {
-  max-width: 100%;
+  width: 1440px;
   height: 300px;
   background-color: #f0f0f0;
   display: flex;
@@ -535,7 +503,7 @@ h1 {
  /* footer */
 footer {
   height: 200px;
-  width: 100%;
+  width: 1440px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -568,7 +536,6 @@ footer {
   gap: 20px;
   width: inherit;
   height: 40px;
-  background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;
