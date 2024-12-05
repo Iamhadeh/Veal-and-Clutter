@@ -135,6 +135,8 @@ function Root() {
         </div>
     </div>
 
+    {/* Testimonials */}
+
     <div className="testimonial">
         <h3 className="heading-3">Testimonials</h3>
         <div className="testimonial-inner-con">
@@ -148,9 +150,40 @@ function Root() {
                 </p>
                 </div>
             </div>
-            <p className="arrow-back-and-front-line"> <span className="arrow-front-testimonial"arrow-back-testimonial>&#8592;</span> <span className="">&#8594;</span></p>
+            <p className="arrow-back-and-front-line"> <span className="arrow-back-testimonial"arrow-back-testimonial>&#8592;</span> <span className="arrow-front-testimonial">&#8594;</span></p>
         </div>
     </div>
+
+
+     {/* call to action */}
+     <div className="CTA">
+            <h2 className="heading-4">Step Into Your Shoe Making Dream</h2>
+            <p className="cta-text">Bring your design to life with our seemless production services. From concept to launch, we made things easy.</p>
+            <div className="cta-input-container">
+                <input type="text" /> <button className="cta-btn">Get In Touch</button>
+            </div>
+        </div>
+
+
+        <footer>
+            <div className="footer-menu">
+                 <button className="menu-btn">Home</button>
+                 <button className="menu-btn">About Us</button>
+                 <button className="menu-btn">Services</button>
+                 <button className="menu-btn">How It Works</button>
+                 <button className="menu-btn">Testimonials</button>
+            </div>
+            <div className="footer-social-media-icons-container">
+                <ul>
+                    <li> <a href=""><img style={{height:"20px"}} src="https://img.icons8.com/?size=100&id=118491&format=png&color=000000" alt="" /></a></li>
+                    <li> <a href=""> <img style={{height:"20px"}} src="https://img.icons8.com/?size=100&id=32292&format=png&color=000000" alt="" /> </a></li>
+                    <li> <a href=""> <img style={{height:"20px"}} src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="" /> </a></li>
+                    <li> <a href=""> <img style={{height:"20px"}} src="https://img.icons8.com/?size=100&id=11xHwSW974uy&format=png&color=000000" alt="" /> </a></li>
+                    <li> <a href=""> <img style={{height:"20px"}} src="https://img.icons8.com/?size=100&id=437&format=png&color=000000" alt="" /> </a></li>
+                    <li> <a href=""> <img style={{height:"20px"}} src="https://img.icons8.com/?size=100&id=37325&format=png&color=000000" alt="" /> </a></li>
+                </ul>
+            </div>
+        </footer>
     </>
     )
 }

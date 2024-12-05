@@ -394,7 +394,7 @@ h1 {
 
 .testimonial {
   width: 1440px;
-  height: 1300px;
+  height: 1200px;
   background-color: transparent;
   display: flex;
   flex-direction: column;
@@ -477,8 +477,7 @@ h1 {
   margin: 0;
   padding: 0;
   gap: 20px;
-  color: orange;
-  font-weight: bolder;
+  /* color: orange; */
   font-size: 50px;
   margin-left: 200px;
 } 
@@ -486,10 +485,101 @@ h1 {
 
 .arrow-back-testimonial {
   cursor: pointer;
+  color: rgb(138, 100, 31);
 }
 
 .arrow-front-testimonial {
   cursor: pointer;
+  color: orange;
 }
 
 
+
+/* cta area */
+
+.CTA {
+  max-width: 100%;
+  height: 300px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px;
+
+}
+
+.cta-input-container {
+  margin: 20px 0px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.cta-input-container input {
+ height: 37px;
+ width: 200px;
+}
+
+.cta-btn {
+  background-color: orange;
+  height: 40px;
+  border-radius: 0px;
+  border: 0px;
+  padding: 10px;
+  color: #f0f0f0;
+  font-weight: bolder;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+ /* footer */
+footer {
+  height: 200px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.footer-menu {
+  height: 20px;
+  display: flex;
+  gap: 20px;
+  width: inherit;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-menu .menu-btn {
+  color: black;
+}
+
+.footer-social-media-icons-container {
+  width: inherit;
+  height: 40px;
+  display: flex;
+}
+
+.footer-social-media-icons-container ul {
+  display: flex;
+  gap: 20px;
+  width: inherit;
+  height: 40px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: inherit;
+}
