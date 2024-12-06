@@ -1968,25 +1968,25 @@ footer {
 
 .main-vid-con{
   width: 360px;
-  height: 440px;
+  height: 400px;
   background-color: #FFFFFF;
 }
 
 .main-vid {
   width: 360px;
-  height: 420px;
+  height: 400px;
   background-color: grey;
 }
 
 .layer-over-box {
   width: 360px;
-  height: 420px;
-  /* display: flex;
+  height: 400px;
+  display: flex;
   position: absolute;
   background-color: rgb(0 0 0/0.7);
   top: 0px;
-  flex-direction: column; */
-  gap: 40px;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .top-bar {
@@ -1998,6 +1998,7 @@ footer {
   gap: 40px;
   background-color: rgb(128 128 128 /0.5);
   padding-right: 10px;
+  padding-top: 20px;
 }
 
 .logo {
@@ -2034,7 +2035,7 @@ footer {
 
   nav {
     display: block;
-    height: 40px;
+    height: 33px;
     width: 70px;
     background-color: transparent;
     padding-top: 10px;
@@ -2120,11 +2121,11 @@ button {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 1.4rem;
   /* color: #f0f0f0; */
 }
 /* .main-text {
@@ -2134,6 +2135,7 @@ h1 {
 .request-quote-btn {
   height: 35px;
   width: 150px;
+  margin-top: 5px;
   /* color: #f0f0f0;
   background-color: transparent;
   border: 2px solid #f0f0f0;
@@ -2283,9 +2285,9 @@ h1 {
 }
 
 .arrow {
-  margin-left: 50px; 
+  margin-left: 0px; 
   text-align: right;
-  flex-basis: auto;
+   flex-basis: content;
   font-weight: bolder;
 }
 
@@ -2301,12 +2303,12 @@ h1 {
   width: 300px;
   background-color: transparent;
   display: flex;
-  gap: 100px;
+  gap: 60px;
   border-bottom: 2px solid black;
 }
 
 .shoe-journey-text-line p {
-  width: 250px;
+  width: 300px;
   font-weight: bolder;
 }
 
