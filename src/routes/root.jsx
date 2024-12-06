@@ -45,6 +45,7 @@ function Root() {
             <Testimonials
             name={TestimonialInfo.name}
             company={TestimonialInfo.company}
+            quote={TestimonialInfo.quote}
             quoteBreakPoint1={TestimonialInfo.quoteBreakPoint1}
             quoteBreakPoint2={TestimonialInfo.quoteBreakPoint2}
             imgLink={TestimonialInfo.imgLink}
