@@ -215,7 +215,6 @@ h1 {
 }
 
 .slider-container {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   width: 1340px;
   height: fit-content;
   padding: 20px;
@@ -400,21 +399,44 @@ h1 {
 .testimonial-inner-con {
   width: 1440px;
   height: 1200px;
-  display: grid;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid; 
+  grid-template-columns: 1440px;
+ grid-template-rows: 1200px;  
 }
 
 .testimonial-box-1 {
   width: 1440px;
   height: 1200px;
   display: grid;
-  grid-template-columns: 1440px;
-  grid-template-rows: 1200px;
+  grid-row: 1/2; 
+  grid-column: 1/2;
 }
 
-.testimonial-box-1 img {
+.testimonial-box-3 {
+  width: 1440px;
+  height: 1200px;
+  display: grid;
+  grid-row: 1/2; 
+  grid-column: 1/2;
+} 
+
+.testimonial-box-4 {
+  width: 1440px;
+  height: 1200px;
+  display: grid;
+  grid-row: 1/2; 
+  grid-column: 1/2;
+} 
+
+
+/* .testimonial-box-1 img {
+  width: 1440px;
+  height: 1200px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+} */
+
+.testimonial-img-1 {
   width: 1440px;
   height: 1200px;
   grid-column: 1/2;

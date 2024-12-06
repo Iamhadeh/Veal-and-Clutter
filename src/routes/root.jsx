@@ -1,18 +1,21 @@
 
 
-
 import React from "react" 
+
+
 import Slider from "react-slick"; 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
 import HamburgerMenu from "../components/hamburgerMenu.jsx";
-
+import TestimonialInfo from "../../resources/TesTimonials.js";
+import Testimonials from "../components/testimonials.jsx";
+import Footer from "../components/footer.jsx";
+import Menu from "../components/menu.jsx";
  
 
 function Root() {
-
 
     const settings = {
         lazyLoad: 'onDemand',
@@ -36,10 +39,25 @@ function Root() {
     };
 
 
+
+    function createTestimonials (TestimonialInfo) { 
+        return (
+            <Testimonials
+            name={TestimonialInfo.name}
+            company={TestimonialInfo.company}
+            quoteBreakPoint1={TestimonialInfo.quoteBreakPoint1}
+            quoteBreakPoint2={TestimonialInfo.quoteBreakPoint2}
+            imgLink={TestimonialInfo.imgLink}
+            key={TestimonialInfo.id}
+            />
+        )
+    }
+
+
     return (
     <>
     <div className="main-vid-con">
-      <video className="main-vid" autoPlay muted>
+      <video className="main-vid" autoPlay loop muted>
         <source src="../Static/Vealandclutter.mp4" type="video/mp4"/>
         <source src="../Static/Vealandclutter.webm" type="video/webm"/>
        </video> 
@@ -48,13 +66,7 @@ function Root() {
     <div className="layer-over-box">
       <div className="top-bar">
           <div className="logo"><img src="" alt="" />VEAL & CUTTER</div>
-           <div className="menu">
-             <button className="menu-btn">Home</button>
-             <button className="menu-btn">About Us</button>
-             <button className="menu-btn">Services</button>
-             <button className="menu-btn">How It Works</button>
-             <button className="menu-btn">Testimonials</button>
-            </div>
+            <Menu/>
             <HamburgerMenu/>
             <div className="book-call-con">
              <button className="bookbtn">Book A Call</button>
@@ -179,21 +191,8 @@ function Root() {
 
     <div className="testimonial">
         <h3 className="heading-3">Testimonials</h3>
-        <div className="testimonial-inner-con">
-            <div className="testimonial-box-1">
-                <img className="testimonial-img-1" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?" alt="" />
-                <div className="testimonial-text-box">
-                <p>"Inovative designs and top-notch <br />
-                quality from Veal & Clutter have <br />
-                elevated our product line."<br />
-                <span className="name-testimonial">Alex Morgan, StrideCraft Industries</span>
-                </p>
-                </div>
-            </div>
-            <p className="arrow-back-and-front-line"> <span className="arrow-back-testimonial"arrow-back-testimonial>&#8592;</span> <span className="arrow-front-testimonial">&#8594;</span></p>
-        </div>
+        {TestimonialInfo.map(createTestimonials)}
     </div>
-
 
      {/* call to action */}
      <div className="CTA">
@@ -204,26 +203,7 @@ function Root() {
             </div>
         </div>
 
-
-        <footer>
-            <div className="footer-menu">
-                 <button className="menu-btn">Home</button>
-                 <button className="menu-btn">About Us</button>
-                 <button className="menu-btn">Services</button>
-                 <button className="menu-btn">How It Works</button>
-                 <button className="menu-btn">Testimonials</button>
-            </div>
-            <div className="footer-social-media-icons-container">
-                <ul>
-                    <li> <a href=""><img style={{height:"20px"}} src="https://img.icons8.com/?size=100&id=118491&format=png&color=000000" alt="" /></a></li>
-                    <li> <a href=""> <img style={{height:"20px"}} src="https://img.icons8.com/?size=100&id=32292&format=png&color=000000" alt="" /> </a></li>
-                    <li> <a href=""> <img style={{height:"20px"}} src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="" /> </a></li>
-                    <li> <a href=""> <img style={{height:"20px"}} src="https://img.icons8.com/?size=100&id=11xHwSW974uy&format=png&color=000000" alt="" /> </a></li>
-                    <li> <a href=""> <img style={{height:"20px"}} src="https://img.icons8.com/?size=100&id=437&format=png&color=000000" alt="" /> </a></li>
-                    <li> <a href=""> <img style={{height:"20px"}} src="https://img.icons8.com/?size=100&id=37325&format=png&color=000000" alt="" /> </a></li>
-                </ul>
-            </div>
-        </footer>
+        <Footer/>
     </>
     )
 }
